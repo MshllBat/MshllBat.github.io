@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Copperplate
+}
+body{
+  height:100vh;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.conatainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  position:absolute;
+  top:30%;
+  left:17%;
+  padding:20px;
+  height:70%;
+  width:60%;
+}
+.textInput{
+  height: 66px;
+}
+
+.textInput input{
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 25px;
+  padding:10px;
+  border: 3px #206e6c solid;
+  box-shadow: 2px 4px 5px #206e6c;
+}
+.error{
+  margin-top: 5px;
+  margin-left: 5px;
+  color: red;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.actionBtns{
+  position:relative;
+  width:400px;
+  height: 90px;
+  margin-top: 50px;
+}
+.actionBtns button{
+  border:3px #132e2d solid;
+  background: #0c7572a8;
+}
+button{
+  position: absolute;
+  padding: 5px;
+  background: white;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#reloadBtn{
+  right:0;
+  padding:inherit;
+}
+#addBtn{
+  left:0;
+  width:265px;
+}
+button:hover{
+  transform: scale(1.03);
+}
+.choices{
+  min-width: 560px;
+  max-width: 560px;
+  min-height:170px;
+  max-height: 170px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+#chooseBtn{
+  margin-left: -200px;
+  margin-top: 40px;
+  width: 400px;
+  border: 3px #ffcf5f solid;
+  background: #ffb200;
+  font-size: 30px;
+  padding: inherit;
+}
+
+.choices ul{
+  list-style: none;
+
+}
+.choice{
+    display: inline-block;
+    margin: 10px;
+    padding: 3px;
+    background: linear-gradient(0deg, rgba(71,81,82,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    width: 140px;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 4px 5px black;
+    transition: transform 4s ease-in-out;
+    position: relative;
+    overflow: scroll;
+}
+#counter{
+  margin-left: 10px;
+  margin-right: -35px;
+  padding: 5px;
+  display: none;
+  min-height: 35px;
+  min-width: 25px;
+  text-align: center;
+  font-size: 26px;
+  color: white;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(71,81,82,1) 0%, rgba(0,0,0,1) 100%);
+}
